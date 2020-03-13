@@ -32,7 +32,7 @@ void ParticleFilter::init(double x, double y, double theta, double std[]) {
    *   (and others in this file).
    */
   
-    num_particles = 10;  // TODO: Set the number of particles    
+    num_particles = 1000;  // TODO: Set the number of particles    
     weights.resize(num_particles);
 
     dist_x = std::normal_distribution<double>(0, std[0]);

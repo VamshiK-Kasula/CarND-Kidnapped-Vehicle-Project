@@ -1,3 +1,28 @@
+## Results
+---
+
+As the number of particles increases the error is reduced but it is pretty slow, hence a tradeoff of 1000 particles is selected. Also for particle size more than 1000, error is not greatly improved but the calculation is pretty slow
+
+
+[image]: ./results/error_characteristics.jpg "error_characteristics"
+
+|num_particles|	error_x	|	error_y	|error_yaw	|system_time|
+|:----------|:---------:|:---------:|:---------:|:---------:|
+|	5	    |	0.238	|	0.197	|	0.007	|	48.86	|
+|	10	    |	0.155	|	0.146	|	0.005	|	48.96	|
+|	50	    |	0.121	|	0.112	|	0.004	|	48.86	|
+|	100	    |	0.114	|	0.108	|	0.004	|	48.86	|
+|	500	    |	0.108	|	0.103	|	0.004	|	49.12	|
+|	1000	|	0.107	|	0.098	|	0.003	|	49.2	|
+|	1500	|	0.106	|	0.099	|	0.003	|	55.02	|
+|	2000	|	0.107	|	0.098	|	0.003	|	58.98	|
+|	2500	|	0.104	|	0.096	|	0.003	|	72.18	|
+|	3000	|	0.109	|	0.099	|	0.003	|	86.92	|
+
+
+
+![alt text][image]
+
 # Overview
 This repository contains all the code needed to complete the final project for the Localization course in Udacity's Self-Driving Car Nanodegree.
 
@@ -139,5 +164,3 @@ The things the grading code is looking for are:
 
 2. **Performance**: your particle filter should complete execution within the time of 100 seconds.
 
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).

@@ -126,7 +126,7 @@ class ParticleFilter {
   std::normal_distribution<double> dist_x;
   std::normal_distribution<double> dist_y;
   std::normal_distribution<double> dist_theta;
-  const std::default_random_engine gen{50};
+  std::default_random_engine gen{50};
 };
 
 #endif  // PARTICLE_FILTER_H_
