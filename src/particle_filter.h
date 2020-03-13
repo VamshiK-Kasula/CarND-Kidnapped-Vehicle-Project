@@ -12,6 +12,9 @@
 #include <string>
 #include <vector>
 #include "helper_functions.h"
+#include <random>
+#include <limits>
+
 
 struct Particle {
   int id;
@@ -120,6 +123,10 @@ class ParticleFilter {
   
   // Vector of weights of all particles
   std::vector<double> weights; 
+  std::normal_distribution<double> dist_x;
+  std::normal_distribution<double> dist_y;
+  std::normal_distribution<double> dist_theta;
+  const std::default_random_engine gen{50};
 };
 
 #endif  // PARTICLE_FILTER_H_
